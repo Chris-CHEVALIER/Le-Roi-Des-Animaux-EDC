@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,66 +11,72 @@
       content="Animaux, Lion, Lions, Savane, Sauvage, Animal, Roi"
     />
     <title>Le Roi des Animaux</title>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    </style>
   </head>
   <body>
-    <h1>Le Roi des Animaux</h1>
+    <header>
+      <h1 class="bold fs-82 yellow text-center">Le Roi des Animaux</h1>
+    </header>
+    <div class="container">
+      <h2>Sommaire</h2>
+      <ol>
+        <li>
+          <a href="#introduction">Présentation</a>
+        </li>
+        <li>
+          <a href="#favorites">Mes lions favoris</a>
+        </li>
+        <li>
+          <a href="#eating">Ce que mange le lion</a>
+        </li>
+      </ol>
 
-    <h2>Sommaire</h2>
-    <ol>
-      <li>
-        <a href="#introduction">Présentation</a>
-      </li>
-      <li>
-        <a href="#favorites">Mes lions favoris</a>
-      </li>
-      <li>
-        <a href="#eating">Ce que mange le lion</a>
-      </li>
-    </ol>
+      <main>
+        <h2 class="yellow" id="introduction">Présentation</h2>
+        <p>
+          Le <span class="red">lion</span> est un animal carnivore, roi des
+          animaux. <br />Il vit en groupe.
+        </p>
+        <div class="text-center">
+          <img
+            src="./images/lions.webp"
+            class="text-center"
+            alt="Lions en groupe"
+          />
+          <img class="rounded-border" src="./images/lion-qui-baille.jpeg" alt="Lion qui baille" />
+        </div>
 
-    <h2 id="introduction">Présentation</h2>
-    <p>
-      Le lion est un animal carnivore, roi des animaux. <br />Il vit en groupe.
-    </p>
+        <hr />
+        <a href="./about.html">À propos</a>
 
-    <img src="./images/lions.webp" alt="Lions en groupe" width="520px" />
+        <h2 id="favorites">Mes lions favoris</h2>
+        <table style="width: 400px">
+          <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+          </tr>
+          <tr>
+            <td>Enzo</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Alex</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>Georgette</td>
+            <td>8</td>
+          </tr>
+        </table>
 
-    <hr />
-    <a href="./about.html">À propos</a>
+        <h2 id="eating">Ce que mange le lion</h2>
+        <ul>
+          <li>Antilope</li>
+          <li>Gazelle</li>
+          <li>Zèbre</li>
+        </ul>
+      </main>
+    </div>
 
-    <h2 id="favorites">Mes lions favoris</h2>
-    <table style="width: 400px">
-      <tr>
-        <th>Nom</th>
-        <th>Âge</th>
-      </tr>
-      <tr>
-        <td>Enzo</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>Alex</td>
-        <td>11</td>
-      </tr>
-      <tr>
-        <td>Georgette</td>
-        <td>8</td>
-      </tr>
-    </table>
-
-    <h2 id="eating">Ce que mange le lion</h2>
-    <ul>
-      <li>Antilope</li>
-      <li>Gazelle</li>
-      <li>Zèbre</li>
-    </ul>
+    <footer>Copyright Chris Chevalier 2024</footer>
   </body>
 </html>
