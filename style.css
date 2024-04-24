@@ -8,7 +8,10 @@ body {
 
 .bold {
   font-weight: bold;
+  /* padding: 200px 0; */
   background-image: url('./images/banner.jpeg');
+  background-position: center;
+  background-size: cover;
   height: 200px;
   margin: 0;
   vertical-align: middle;
@@ -45,12 +48,19 @@ a:hover {
 }
 
 img {
-  height: 320px;
-  width: 320px;
+  width: 50%;
   /* border: 5px solid violet;
   padding: 50px; */
   object-fit: cover;
   margin: 10px 30px 15px 25px;
+}
+
+.text-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .rounded-border {
@@ -62,9 +72,33 @@ table, th, td {
     border-collapse: collapse;
 } 
 
+table {
+  width: 400px;
+}
+
 footer {
     text-align: center;
     padding: 25px;
     background-color: dodgerblue;
     color: white;
+}
+
+@media screen and (max-width: 1085px) {
+  .text-img-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .fs-82 {
+    font-size: 32px;
+  }
+
+  table {
+    width: 320px;
+  }
+
+  img {
+    width: 280px;
+  }
 }

@@ -32,24 +32,31 @@
 
       <main>
         <h2 class="yellow" id="introduction">Présentation</h2>
-        <p>
-          Le <span class="red">lion</span> est un animal carnivore, roi des
-          animaux. <br />Il vit en groupe.
-        </p>
-        <div class="text-center">
+
+        <div class="text-img-container">
+          <p>
+            Le <span class="red">lion</span> est un animal carnivore, roi des
+            animaux. <br />Il vit en groupe.
+          </p>
+
           <img
             src="./images/lions.webp"
             class="text-center"
             alt="Lions en groupe"
           />
-          <img class="rounded-border" src="./images/lion-qui-baille.jpeg" alt="Lion qui baille" />
         </div>
+
+        <img
+          class="rounded-border"
+          src="./images/lion-qui-baille.jpeg"
+          alt="Lion qui baille"
+        />
 
         <hr />
         <a href="./about.html">À propos</a>
 
         <h2 id="favorites">Mes lions favoris</h2>
-        <table style="width: 400px">
+        <table>
           <tr>
             <th>Nom</th>
             <th>Âge</th>
@@ -77,6 +84,25 @@
       </main>
     </div>
 
+    <video src="./videos/planet.mp4" autoplay width="920px">
+      Votre navigateur ne peux pas lire la vidéo !
+    </video>
+
+    <audio src="./audios/music.mp3" controls loop>
+      Votre navigateur ne supporte l'audio !
+    </audio>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/gJ_G-gxQRRk?si=XtCcOH9j-OcDAT43"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    
     <footer>Copyright Chris Chevalier 2024</footer>
   </body>
 </html>
