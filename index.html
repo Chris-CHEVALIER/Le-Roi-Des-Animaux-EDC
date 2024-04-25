@@ -14,9 +14,12 @@
   </head>
   <body>
     <header>
-      <h1 class="bold fs-82 yellow text-center">Le Roi des Animaux</h1>
+      <a href="./index.html">
+        <h1 class="bold fs-82 yellow text-center">Le Roi des Animaux</h1>
+      </a>
     </header>
     <div class="container">
+      <button id="dark-btn" onclick="changeTheme()">Mode sombre</button>
       <h2>Sommaire</h2>
       <ol>
         <li>
@@ -27,6 +30,9 @@
         </li>
         <li>
           <a href="#eating">Ce que mange le lion</a>
+        </li>
+        <li>
+          <a href="./contact.html">Nous contacter</a>
         </li>
       </ol>
 
@@ -76,15 +82,17 @@
         </table>
 
         <h2 id="eating">Ce que mange le lion</h2>
-        <ul>
+        <ul id="preys-container"></ul>
+        <!-- <ul>
           <li>Antilope</li>
           <li>Gazelle</li>
           <li>Zèbre</li>
         </ul>
+        -->
       </main>
     </div>
 
-    <video src="./videos/planet.mp4" autoplay width="920px">
+    <!-- <video src="./videos/planet.mp4" autoplay width="920px">
       Votre navigateur ne peux pas lire la vidéo !
     </video>
 
@@ -102,7 +110,9 @@
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
-    
+-->
+
     <footer>Copyright Chris Chevalier 2024</footer>
+    <script src="./script.js"></script>
   </body>
 </html>

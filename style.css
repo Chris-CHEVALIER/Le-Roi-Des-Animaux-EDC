@@ -3,7 +3,12 @@
 body {
   font-family: 'Montserrat';
   margin: 0;
-  /* background-color: orange; */
+  margin-bottom: 10vh;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
 }
 
 .bold {
@@ -30,7 +35,7 @@ body {
 }
 
 .container {
-    margin: 0 5%;
+  margin: 0 5%;
 }
 
 a {
@@ -64,23 +69,48 @@ img {
 }
 
 .rounded-border {
-    border-radius: 36%;
+  border-radius: 36%;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-} 
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 
 table {
   width: 400px;
 }
 
 footer {
-    text-align: center;
-    padding: 25px;
-    background-color: dodgerblue;
-    color: white;
+  width: 100vw;
+  text-align: center;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.contact-section {
+  margin: 25px 25%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-btn {
+  background-color: dodgerblue; /* Green */
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1085px) {
